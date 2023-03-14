@@ -1,0 +1,3159 @@
+*{
+    box-sizing: border-box;
+    font-family: myFirstFont;
+    margin: 0;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Roboto/Roboto-Regular.ttf);
+ }
+body{
+    margin: auto;
+}
+
+#info{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    justify-content: space-between;
+}
+
+#leftInfo{
+   display: flex;
+}
+
+.email, .addres{
+    padding-left: 20px;
+}
+#rightInfo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.fPc, .socialmedia{
+    display: flex;
+    
+}
+
+.socialmedia .fa{
+    height: 35px;
+    width: 35px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.socialmedia{
+    margin-right: 20px;
+}
+
+.faqs, .Pricing{
+    margin-right: 10px;
+}
+
+.email, .addres, a{
+    text-decoration: none;
+}
+
+.workhours i{
+    color:#B2B3B2 ;
+}
+#leftInfo a{
+    color:#B2B3B2;
+}
+
+
+.fa-clock-o, .fa-envelope, .fa-map-marker{
+    color: #BF976B;
+}
+
+.fPc{
+    color:#BF976B;
+}
+
+.fPc p{
+    color:#B2B3B2;
+    cursor: pointer;
+}
+
+#navbar{
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+}
+
+.logo img{
+    width: 100%;
+    max-width: 35px; 
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 40px;
+}
+.logo p{
+    padding-left: 5px;
+    font-size: 45px;
+}
+#navigatorbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#navigatorbar ul{ 
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+li a{
+    color:#BF976B;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.schedule{
+    width: 20%;
+    height: 50px;
+    background-color: #BF976B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+.search{
+    border-left: 2px solid #E6E6E6;
+    padding-left: 40px;
+    height: auto;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-search {
+    padding-right: 20px;
+   
+}
+
+span{
+    color: white;
+    text-align: center;
+    
+}
+
+.fa.fa-calendar{
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+
+ul li:hover{
+    border-top: 1px solid #BF976B;
+    color: black;
+}
+
+ul li:hover a{
+    color: black;
+    
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome, .welcome_appartment_1{
+    width: 100%;
+    height: 750px;
+}
+.mySlides{
+    width: 100%;
+    height:100%;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+.btn_1{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0px;
+height: calc(100vh - 130px);
+width: 100%;
+}
+
+.btn_2{
+    width: 100%;
+    padding: 0 315px;
+}
+.btn_2 p{
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.btn_2 [type=button]{
+    padding: 10px;
+    width: 200px;
+    color: white;
+    background-color: #2A2F29;
+    border: none;
+    border-left: 2px solid #C6A078;
+}
+.fa-clock-o:before {
+    content: "\f017";
+    color: #BF976B;
+}
+ 
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative; 
+  overflow: hidden;
+  height: calc(100vh - 170px);
+  
+}
+
+.slideshow-container img{
+    width: 100%; 
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/*.prev:hover, .next:hover {
+  background-color: #867565;
+}*/
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+.dots{
+  position: absolute;
+  left: 315px;
+  bottom: 140px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+  border: 2px solid white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.activeImg{
+    display: block !important;
+}
+
+.activeImg img{
+    display: block !important;
+}
+
+.fa.fa-long-arrow-left, .fa.fa-long-arrow-right{
+    color: black;
+    height: 50px;
+    width: 50px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.prev .fa:hover, .next .fa:hover{
+   opacity: 1;
+}
+
+.prev{
+    margin-left: 40px;
+}
+
+.next{
+    margin-right: 40px;
+}
+
+#blanco{
+    width: 100%;
+    height: auto;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(192,192,192,0.1);
+} 
+
+#blanco::after{
+content: "";
+  background: url(plan.jpg);
+  width: 100%;
+  max-width: 1024px;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-position: center; 
+  background-size: cover;
+} 
+
+
+.room{
+    background: url(room.jpg);
+    height: 470px;
+    width: 100%;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    
+} 
+.room::before{
+    content: '';
+    background-image: url(dots.png);
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    opacity: 0.8;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -50px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+#infoAddres{
+    width: 310px;
+    align-self: flex-start;
+}
+.infoAppartments{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 20px 35px
+}
+
+#blanco .fa{
+    margin-bottom: 15px;
+    color: #B2B3B2;
+    display: flex;
+}
+
+#blanco .fa::before{
+    color: #BF976B;
+    padding-right: 20px;
+}
+
+.description p, h1{
+    margin: 0;
+}
+.description p{
+    color: #BF976B;
+    font-weight: bold;
+}
+.description h1{
+    font-size: xxx-large;
+    font-weight: bolder;
+    margin-top: 10px;
+
+}
+.success{
+    margin-top: 30px  !important;
+    margin-bottom: 30px  !important;
+    color: #2A2F29 !important;
+    font-weight: 600;
+    line-height: 1.5;
+}
+  
+
+.discover{
+    margin-top: 30px;
+    color: white;
+    background-color: #BF976B;
+    border-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+.infoAppartments .fa::before{
+    font-size: 60px;
+}
+
+.infoAddresNy{
+    background-color: #BF976B;
+    color: white;
+    padding: 35px;
+    opacity: 0.9;
+}
+
+.infoAppartments .column{
+    padding: 20px 0 !important; 
+    border-bottom:2px solid #E6E6E6;
+    width: 100%;
+    font-weight: bolder;
+    font-size:  x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoAppartments .column div{
+    padding-left: 15px;
+}
+.infoAppartments .column:last-child{ 
+    border-bottom:0; 
+}
+
+.infoAppartments .column .fa{
+    margin: 0;
+    margin-bottom:0 !important;
+    width: 60px; 
+    justify-content: center;
+    align-items: center;
+}
+    
+.infoAppartments .column .fa::before{
+    padding-right: 0 !important;
+    font-size: 45px;
+}
+
+.infoAppartments .column p{
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-size: 30px;
+}
+
+.infoAppartments .column p.textDiscription{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+
+.infoAppartments .fa-bed{
+    border-style: none;
+}
+
+.logo_2 img{
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 370px;
+    margin-left: -50px;
+    
+}
+
+.line{
+    width: 10px;
+    height: 140px;
+    background-color: #BF976B;
+    position: absolute;
+    margin-left: -20px;
+}
+.infoAppartments p{
+    display: contents;
+    line-height: 1.3;
+}
+.textDiscription{
+    color: #B2B3B2;
+    font-weight: 100;
+    font-size: large;
+}
+.number{
+    color: black;
+}
+
+#luxeryBackground{
+    width: 100%;
+    height: 750px;
+    position: relative;
+    display: flex;
+    background-color: rgba(192,192,192,0.1);
+    flex-direction: column;
+}
+
+#luxeryBackground::after{
+    content: "";
+    background: url(sand.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
+.leftText p{
+    color: #BF976B;
+}
+.leftText h1{
+    font-weight: bolder;
+    font-size: 46px;
+    
+}
+.logoText{
+    background-image: url(logo.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    margin-top: -105px;
+}
+.rightText p{
+    color: #B2B3B2;
+    line-height: 2;
+}
+#wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.leftText{
+   width: 500px;
+}
+.rightText{
+    margin-left: 24px;
+    width: 500px;
+}
+.containaer{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+.lifestyle, .construction, .location,  .technology{
+    width: 245px;
+    background-color: white;
+    margin-right: 10px;
+    line-height: 2;
+    padding-top: 40px;
+}
+
+.containaer .fa::before{
+    color: #BF976B;
+   
+}
+.lifestyle .fa-building-o, .lifestyle .fa-building, .lifestyle .fa-globe, .lifestyle .fa-cogs, .containaer h3, .containaer p{
+    padding-left: 40px;
+}
+
+.containaer h3{
+    color:black;
+    padding-right: 40px;
+    
+}
+.containaer p{
+    border-bottom: 3px solid rgba(192,192,192,0.1) ;
+    padding-right: 4g9920px;
+    padding-bottom: 30px;
+    line-height: 2;
+    color: #B2B3B2;
+    margin: 0;
+}
+
+.lifestyle:hover{
+    background-color: #BF976B;
+    color: white;
+}
+
+.lifestyle:hover p, .lifestyle:hover h3, .lifestyle:hover i::before{
+    color: white;
+}
+
+.lifestyle:hover .readMore {
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0.5), rgba(7, 7, 7, 0.5)), url(lifestyle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.readMore{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.readMore:hover i::before{
+    color: #BF976B;
+}
+
+.lifestyle:hover .fa-arrow-circle-right::before{
+    color: #BF976B;
+} 
+#buildingTourBackground{
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0.7), rgba(7, 7, 7, 0.7)), url(terrace.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 100px;
+}
+#buildingTourBackground p{
+    color: #BF976B;
+}
+#buildingTourBackground h1{
+    color:white;
+    font-size: 60px;
+}
+#buildingTourBackground::before{
+    content: '';
+    background-image: url(logo.png);
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+    background-size: cover;
+    position: absolute;
+}
+
+#tourVideo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-color: #f9f7f7;
+}
+
+video{
+    border: 30px solid white;
+    position: relative;
+    bottom: 240px;
+}
+    
+.btnVideo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    background-color: #BF976B;
+    z-index: 999;
+    display: none;
+}
+.activeVideo{
+    display: block;
+}
+video::-webkit-media-controls {
+    display: none !important;
+  }
+#btnVideo:hover{
+    outline: 15px solid rgba(255,255,255,0.3);
+}
+#newDiv{ 
+    width: 100%;
+    height: auto;
+    background-color: #f9f7f7;
+    padding-bottom: 50px;
+}
+.newDiv-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    background-color: #f9f7f7;
+    flex: 0 0 100%;
+    margin: auto;
+}
+#newDiv img{
+    height: 160px;
+    width: 100%;
+    max-width: 160px;
+    border-radius: 50%;
+    background-position: center; 
+    background-size: cover;
+    box-shadow: -13px 0px 0px 0px #bf976b;
+}
+
+.newConcept{
+    display: flex; 
+    border-top: 1px solid #E8E8E8;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.newDiv-wrapper .newConcept:first-child{
+    border-right: 1px solid #E8E8E8;
+    padding-right: 30px;
+}
+
+.newDiv-wrapper .newConcept:last-child{
+    padding-left: 30px;
+}
+
+.newConceptText{
+    width: 50%;
+}
+
+#tourVideo ::after{
+    background-color: #E8E8E8;
+}
+#envato{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+#envato img{
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+#envato img:hover{
+    opacity: 0.6;
+    background: silver;
+    opacity: 0.6;
+    background: silver;
+    width: 100%;
+    max-width: 200px;
+    height: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#planBackground{
+    width: 100%;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+#planWrap{
+    margin-bottom: 50px;
+}
+#planPictures img{
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    background-position: center; 
+    background-size: cover;
+}
+#planInfo{
+    float: left;
+    width: 33%;
+}
+
+.right{
+    width: 80px;
+}
+#planNav{
+    display: flex;
+}
+#planInfo div{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#planInfo div:nth-child(odd){
+    background: white;
+}
+#thePlan p{
+    color: #BF976B;
+}
+#thePlan h1{
+    font-weight: bolder;
+    font-size: 45px;
+    width: 350px;
+    padding-bottom: 30px;
+}
+#thePlan h1::before {
+    content: '';
+    background-image: url(logo.png);
+    width: 100%;
+    max-width: 95px;
+    height: 110px;
+    opacity: 0.1;
+    background-size: cover;
+    position: absolute;
+}
+#navWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#planNav nav{
+    width: 150px;
+    height: 50px;
+    background-color: #2A2F29;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+#planNav nav:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#planNav nav:hover{
+  
+    background-color: tan;
+}
+#planNav nav:hover::before {
+    content: "";
+    position: absolute;
+    margin-top: 57px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 8px solid tan;
+}
+#wrapInfoPictures{
+    width: 100%;
+}
+#planPictures{
+    float: left;
+    width: 33%;
+}
+#planDiscription button{
+    margin-top: 20px;
+    color: white;
+    background-color: #BF976B;
+    border-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 285px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#planDiscription{
+    line-height: 2;
+}
+.left{
+    color:#B2B3B2;
+    width: 50%;
+}
+.right{
+    color: #BF976B;
+}
+#planDiscription p{
+    color: #B2B3B2;
+}
+#apartmentComplex{
+    width: 100%;
+    height: auto;
+}
+#explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    font-weight: bold;
+}
+#explore p{
+    color: #BF976B;
+}
+#explore h1{
+    font-size: 50px;
+    width: 470px;
+    text-align: center;
+}
+#explore h1::before{
+  background: url('logo.png') CENTER CENTER NO-REPEAT;
+  content: "";
+  background-size: 100px 120px;
+  background-position: center;
+  display: block;
+  opacity: 0.1; 
+  width: 100px;
+  height: 120px;
+  margin: auto;
+  margin-bottom: -120px;
+}
+#select{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#select img{
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    background-position: center;
+}
+#select .container{
+    background: linear-gradient(0deg, rgba(196,158,119, 1), rgba(196,158,119, 1));
+    max-width: 350px;
+    margin-right: 20px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container p{
+    position: absolute;
+    bottom: 35px;
+    left: 60px;
+    width: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.container  .fa-long-arrow-right{
+    color: white;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hide{
+    position: relative;
+    background-color: rgba(196,158,119, 0.7);
+    height: 100%;
+    display: none;
+}
+.hide:after{
+    content: "";
+    width: 350px;
+    height: 3px;
+    background-color: white;
+    display: block; 
+    margin-top: -35px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.hide::before{
+    content: "";
+    width: 3px;
+    height: 350px;
+    background-color: white;
+    display: block;
+    margin-left: 35px;
+    margin-top: -350px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+#select .container:hover .hide{
+    display: block;
+}
+#neighbor{
+    width: 25%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+#neighbor::before{
+    content: "";
+    background: url(plan.jpg);
+    opacity: 0.1;
+    left: 0;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 55%;
+    height: 740px;
+}
+#areaPicture::before{
+    content: "";
+    background-image:linear-gradient(0deg, rgba(12, 12, 12, 0.5), rgba(7, 7, 7, 0.5)), url(sunset.jpg);
+    width: 45%;
+    height: 732px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+}
+#nearby{
+    width: 100%;
+    height: 715px;
+    display: flex;
+    justify-content: end;
+    margin-top: 130px;
+}
+.nearby{
+    color: tan;
+}
+#neighbor h1{
+    width: 469px;
+    font-size: 40px;
+}
+#neighbor h1::before{
+    content: '';
+    background-image: url(logo.png);
+    width: 100%;
+    max-width: 85px;
+    height: 95px;
+    opacity: 0.1;
+    background-size: cover;
+    position: absolute;
+}
+#neighbor div p{
+    width: fit-content;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    max-width: 469px;
+    position: relative;
+}
+.restaurant{
+    border-bottom: 1px solid black;
+    width: 100%;
+    max-width: 469px;
+}
+.content {
+    display: none;
+}
+#neighbor i{
+    float: right;
+    cursor: pointer;
+}
+#areaPicture{
+    width: 45%;
+    height: 700px;
+    margin-left: 100px;
+}
+#areaPicture p{
+    color: white;
+    background-color: black;
+    width: 100%;
+    max-width: 150px;
+    height: 70px;
+    padding: 15px;
+    border: 6px solid tan;
+    outline: 10px solid white;
+    position: relative; 
+    display: none;
+}
+
+.km-1{
+    top: 477px;
+    left: 159px;
+}
+
+.km-2{
+    top: 333px;
+    left: 40px;
+}
+
+.km-3{
+    top: 338px;
+    left: 337px;
+}
+
+.km-4{
+    top: 480px;
+    left: 417px;
+}
+#areaPicture p::before{
+    content: "";
+    position: absolute;
+    margin-top: 57px;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-top: 20px solid white;
+    left: 100px;
+}
+.pointerRestaurant{
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    width: 10px;
+    margin-top: 583px;
+    margin-left: 297px;
+    opacity: 0.8;
+    outline: 8px solid rgba(255,255,255,0.3);
+}
+
+.pointerCentralPark{
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    width: 10px;
+    margin-top: 440px;
+    margin-left: 180px;
+    opacity: 0.8;
+    outline: 8px solid rgba(255,255,255,0.3);
+}
+.pointerShoppingCentar{
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    width: 10px;
+    margin-top: 445px;
+    margin-left: 475px;
+    opacity: 0.8;
+    outline: 8px solid rgba(255,255,255,0.3);
+}
+.pinterPlayGrounds{
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    width: 10px;
+    margin-top: 585px;
+    margin-left: 558px;
+    opacity: 0.8;
+    outline: 8px solid rgba(255,255,255,0.3);
+}
+.pointerRestaurant:hover, .pinterPlayGrounds:hover, .pointerShoppingCentar:hover, .pointerCentralPark:hover{
+    opacity: 0.4;
+}
+.fa-minus-circle{
+   color: tan;
+}
+#newsBackground{
+    width: 100%;
+    height: 575px;
+    background-image: url(sand.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#newsTitle{
+    color: white;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-bottom: 60px;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#newsTitle h1{
+    font-size: 40px;
+    text-align: center;
+    width: 400px;
+}
+#newsTitle h1::before{
+    content: '';
+    background-image: url(logo.png);
+    width: 100%;
+    max-width: 70px;
+    height: 90px;
+    opacity: 0.1;
+    background-size: cover;
+    position: absolute;
+    margin-left: 140px;
+}
+#newsPictures{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.post{ 
+    width: 300px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}  
+
+.post .blog-img{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-img-1{
+    background-image: url(people.jpg); 
+}
+
+.blog-img-2{
+    background-image: url(signature.jpg); 
+}
+
+.blog-img-3{
+    background-image: url(loft.jpg); 
+}
+
+ 
+.calendar{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.calendar p{
+    margin: 0;
+    font-size: 11px;
+}
+.calendar h3{
+    margin: 0;
+}
+.borderBottom{
+    background-color: white;
+    width: 70px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 0;
+    opacity: 0.6;
+}
+.outlineBottom{
+    background-color: white;
+    width: 70px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 0;
+    opacity: 0.3;
+}
+#backgroundPostetBy{
+    width: 100%;
+    height: auto;
+    background-color: #ededed;
+   
+}
+.postedBy{
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: 30px 40px;
+}
+.mikeImg{
+    display: flex;
+    align-items: center;
+    
+}
+.mikeImg img{
+    width: 100%;
+    max-width: 35px;
+    height: 35px;
+   border-radius: 50%;
+   outline: 2px solid tan;
+   margin-right: 10px;
+}
+.postedBy h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.postedBy p{
+    margin-bottom: 20px;
+}
+
+.mikeText h6{
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+.mikeText p{
+    margin: 0;
+    font-size: 14px;
+}
+.luxurySpaseReadMore{
+    background-color: white; 
+    width: 100%;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+.luxurySpaseReadMore span{
+    padding: 0;
+    color: #717171;
+    font-family: "myFirstFont";
+    font-size: 14px;
+    cursor: pointer;
+}
+.luxurySpaseReadMore i{
+    color:#717171;
+    font-size: 18px;
+    margin: 0 2px;
+}
+.luxurySpaseReadMore i::before{
+    color:#BF976B;
+}
+.postedBy p{
+    color: #717171;
+    line-height: 1.5;
+}
+.postedBy:hover{
+    background-color: #FFFFFF;
+}
+.luxurySpaseReadMore:hover{
+    background-color: #F6F6F6;
+}
+.postedBy h2:hover{
+    color: tan;
+}
+.postedBy:hover h2{
+    color: tan;
+}
+.postedBy:hover .luxurySpaseReadMore{
+    background-color: #F6F6F6;
+}
+#spase{
+    margin-left: 10px;
+}
+.pic-1{
+    background-image: url(people.jpg);
+    
+   
+}
+.pic-2{
+    background-image: url(pic-2.jpg);
+  
+   
+}
+.pic-3{
+    background-image: url(pic-3.jpg);
+   
+}
+.pic-4{
+    background-image: url(pic-4.jpg);
+    
+}
+.pic-5{
+    background-image: url(pic-5.jpg);
+   
+}
+.pic-6{
+    background-image: url(pic-6.jpg);
+  
+}
+.pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border: 15px solid white;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+.hide-secund{
+    position: relative;
+    background-color: rgba(196,158,119, 0.8);
+    height: 100%;
+    display: none;
+    bottom: 150px;
+    cursor: pointer;
+}
+.column:hover .hide-secund{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide-secund i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#postedByPictures button{
+    position: absolute;
+    margin-bottom: 865px;
+    margin-left: 475px;
+    border: none;
+    background: rgba(255,255,255,0);
+    display: none;
+}
+.hidePictures{
+   display: none; 
+}
+.hidePictures img{
+   width: 500px;
+    height: 600px;
+    position: absolute;
+    margin-top: -820px;
+    margin-left: -905px;
+}
+#wrapMike{
+    display: flex;
+    justify-content: center;
+}
+#postedByPictures{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 100px;
+    padding-top: 260px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 85px;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    border: 15px solid white;
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    cursor: pointer;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .NewContainer {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    margin-top: 100px;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  .NewContainer img{
+    height: 500px;
+    width: 50%;
+  }
+
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: -412px;
+    margin-top: -10px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+    z-index: -1;
+}
+  .nextImg{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -500px;
+  }
+  .nextImg button, .prevImg button{
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+    cursor: pointer;
+  }
+  .prevImg{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -500px;
+  }
+
+
+#backgroundemail{
+    width: 100%;
+    height: 135px;
+    background-color: #212620;
+    display: flex;
+    align-items: center;
+}
+#backgroundemail a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#email{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 100px;
+    border: none;
+    background-color: #282F28;
+    color: white;
+}
+#backgroundemail input[type="submit"]{
+    border: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: tan;
+    color: white;
+}
+footer{
+    background-image: linear-gradient(90deg, rgb(42,47,41, 1), rgb(42,47,41, 0.9)), url("footer.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+#certifietAgent{
+    width: 100%;
+    max-width: 316px;
+    height: 430px;
+    position: relative;
+    bottom: 85px;
+}
+.prootyLogo{
+    width: 316px;
+    height: 100px;
+    background: tan;
+    display: flex;
+    align-items: center;
+}
+.prootyLogo img{
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+    margin-left: 50px;
+}
+.prootyLogo p{
+    color: white;
+    padding-left: 5px;
+    font-size: 30px;
+}
+.certifietAgentInfo{
+    background-color: #212620;
+    width: 316px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+.certifietAgentInfo img{
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+.wrapMikeImg{
+    display: flex;
+    align-items: center;
+    width: 216px;
+}
+.wrapMikeText{
+    line-height: 2;
+    margin-left: 20px;
+}
+.wrapMikeText p{
+    color: tan;
+    font-size: 13px;
+}
+.wrapMikeText h3{
+    color:white;
+}
+.telMail{
+    color:#717171 !important;
+    line-height: 2;
+}
+.telMail a{
+    color:#717171 ;
+}
+.certifietAgentInfo input[type="button"]{
+    color: white;
+    background-color: #292F29;
+    border: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.prootyLogo::before{
+    content: "";
+    position: absolute;
+    margin-top: 108px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 8px solid tan;
+    left: 56px;
+}
+.wrapFooterContact h3{
+    color: white;
+}
+.wrapFooterContact span{
+    color: tan;
+}
+.exploreFooterLeft p, .exploreFooterRight p, #contact p{
+    color: #717171;
+    cursor: pointer;
+}
+.leftRight{
+    display: flex;
+}
+.needHelp{
+    display: flex;
+    flex-direction: column;
+}
+.wrapFooter{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid #717171;
+}
+.wrapFooterContact{
+    display: flex;
+    padding-top: 35px;
+    line-height: 2;
+}
+.exploreFooterRight, #contact{
+    height: 235px;
+}
+#exploreFooter{
+    height: 235px;
+    margin-right: 100px;
+}
+#contact h3{
+    padding-bottom: 15px;
+}
+.needHelp a{
+    color: white;
+    padding-left: 10px;
+}
+.needHelp .fa{
+    color: tan;
+}
+#wrapNewsLEter{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.exploreFooterLeft{
+    margin-right: 80px;
+}
+.copyright{
+    width: 100%;
+}
+.wrapCopyRight{
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.copyrightRightSide{
+    display: flex;
+}
+.copyrightRightSide i{
+    height: 35px;
+    width: 35px;
+    background-color: #212620;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    color: white;
+}
+/*-------------------------------------------------------------------------- screen from 1200px to 1400px-------------------------------------------------------------------------*/
+@media only screen and (max-width: 1399px){
+    .km-4{
+        left: 343px;
+    }
+    .pinterPlayGrounds{
+        margin-left: 480px; 
+    }
+    .schedule{
+        flex-wrap: wrap;
+    }
+    .schedule .fa{
+        width: 50px;
+    }
+    /* .schedule span{
+        text-align: center;
+        padding-right: 15px;
+    } */
+    .newDiv-wrapper{
+        width: 90%;
+    }
+    .hide:after{
+        width: 275px;
+    }
+    .closebtn{
+        margin-left: -296px;
+    }
+    .nextImg{
+        margin-left: 690px;
+    }
+    .prevImg{
+        margin-left: 298px;
+    }
+
+
+}
+/*--------------------------------------------------------------------------------- end from 1200px to 1400px------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------- screen from 1024 to 1200px---------------------------------------------------------------------------*/
+ 
+@media only screen and (max-width: 1199px){
+    #info{
+        justify-content: space-around;
+    }
+    #leftInfo{
+        display: block;
+    }
+    .email, .addres{
+        padding: 0;
+    }
+    #navbar{
+        height: auto;
+    }
+    .logo{
+        text-align: center;
+        margin: 0;
+    }
+    .logo p{
+        padding: 0;
+        font-size: 32px;
+    }
+    .schedule{
+        text-align: center;
+        display: block;
+        
+    }
+    .schedule span{
+        padding: 0;
+        font-size: 14px;
+    }
+    .search{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fa.fa-calendar{
+        margin: auto;
+    }
+    .logo_2 img{
+        width: 100%;
+        max-width: 80px;
+        height: 80px;
+        position: absolute;
+        margin-top: 340px;
+        margin-left: -30px;
+    }
+    .room::before{
+        width: 120px;
+        height: 120px;
+    }
+    .room{
+        max-height: 420px;
+        max-width: 300px;
+        margin-left: 30px;
+    }
+    #newDiv img{
+        height: 170px;
+        max-width: 170px;
+        bottom: 225px;
+        right: -30px;
+    }
+    .newConcept p, .value p{
+        padding-right: 0;
+        padding-top: 20px;
+    }
+    #planInfo, #planPictures{
+        width: 36%;
+    }
+    #planDiscription{
+        line-height: 1.9;
+    }
+    #planDiscription button{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 280px;
+        font-size: 17px;
+    }
+    #neighbor{
+        width: 33%;
+    }
+    #backgroundemail input[type="submit"]{
+        margin-right: 5px;
+    }
+    .pointerRestaurant{
+        margin-top: 621px;
+        margin-left: 150px;
+    }
+    .pointerCentralPark{
+        margin-top: 477px;
+        margin-left: 150px;
+    }
+    .pointerShoppingCentar{
+        margin-top: 470px;
+        margin-left: 280px;
+    }
+    .pinterPlayGrounds{
+        margin-top: 613px;
+        margin-left: 341px;
+    }
+    .km-1{
+        top: 515px;
+        left: 12px
+    }
+    .km-2{
+        top: 371px;
+        left: 11px;
+    }
+    .km-3{
+        top: 363px;
+        left: 142px;
+    }
+    .km-4{
+        top: 505px;
+        left: 200px;
+    }
+    .chillZone, .architecturePlan, .signaturePerson{
+        width: 320px;
+    }
+    .wrapCopyRight{
+        width: 100%;
+    }
+    .nextImg{
+        margin-left: 556px;
+    }
+    .prevImg{
+        margin-left:253px;
+    }
+    .closebtn{
+        margin-left: -252px;
+    }
+}
+/*------------------------------------------------------------------------- end screen from 1024 to 1200px -------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------- screen from 992 to 1024px------------------------------------------------------------------*/
+@media only screen and (max-width: 1023px){
+    .search{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-search{
+        padding: 0;
+    }
+    #navigatorbar ul{
+        margin-right: 20px;
+    }
+    .room{
+        max-height: 400px;
+        max-width: 280px;
+        margin-left: 70px;
+    }
+    .room::before{
+        width: 90px;
+         height: 90px;
+         margin-left: -36px;
+        margin-top: -36px;
+    }
+    .logo_2 img{
+        max-width: 70px;
+        height: 70px;
+        margin-top: 330px;
+        margin-left: -35px;
+    }
+    .description h1{
+        font-size: xx-large;
+    }
+    .description p{
+        line-height: 1.4;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    #blanco .fa{
+        margin-bottom: 10px;
+    }
+    .discover{
+        margin-top: 10px;
+    }
+    #infoAddres{
+        width: 234px;
+    }
+    #planDiscription button{
+        width: 270px;
+    }
+    .wrapCopyRight{
+        width: 100%;
+    }
+    .wrapMikeText h3{
+        margin: revert;
+    }
+    .telMail{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .certifietAgentInfo{
+        height: 280px;
+    }
+    .socialmedia{
+        display: none;
+    }
+    #leftInfo{
+        display: flex;
+    }
+    .chillZone, .architecturePlan, .signaturePerson{
+        width: 310px;
+    }
+    #navigatorbar ul{
+        margin: 0;
+    }
+    .closebtn{
+        margin-left: -244px;
+    }
+    .prevImg{
+        margin-left: 244px;
+    }
+    .nextImg{
+        margin-left: 532px;
+    }
+}
+
+/*--------------------------------------------------------------------- end screen from 992 to 1024px --------------------------------------------------------------- */
+#navigatorbar button{
+    display: none;
+
+}
+
+
+/*------------------------------------------------------------------------- 3.screen min 768 max 992px-----------------------------------------------------------------*/ 
+@media only screen and (max-width: 991px){
+    #navigatorbar button{
+        display: block;
+    }
+    #navigatorbar ul{
+        display: none; 
+        position: absolute;
+        height: auto;
+        right: 0;
+        background-color: white;
+        z-index: 9;
+        top: 68px;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+    .search, .schedule{
+        display: none;
+    }
+    #navigatorbar ul.menu-open,  #navigatorbar .search.menu-open, #navigatorbar .schedule.menu-open{
+       display: block ;    
+    }  
+    .open{
+        border-style: none;
+        background-color: tan;
+        font-size: 1em;
+    }
+    .navbar-opened .open .fa-bars{
+        position: absolute;
+        margin-top: -170px;
+
+        margin-left: -188px;
+    }
+    .navbar-opened ul li:hover{
+        border: none;
+    }
+    .schedule{
+        width: 100%;
+    }
+    .schedule span{
+        padding: 0;
+    }
+    
+    .fa-search{
+        padding-right: 10px;
+    }
+
+
+    #exploreFooter, .exploreFooterLeft{
+        margin-right: 25px;
+    }
+    .certifietAgentInfo, .prootyLogo{
+        width: 250px;
+    }
+    .wrapMikeText h3{
+        margin: unset;
+        font-size: 15px;
+    }
+    .wrapMikeText p{
+        font-size: 11px;
+    }
+    .wrapFooterContact{
+        width: 100%;
+    }
+    #backgroundemail a{
+        font-size: 17px;
+    }
+    #email{
+        padding-left: 10px;
+        padding-right: 70px;
+    }
+    #backgroundemail input[type="submit"]{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #neighbor{
+        width: 41%;
+    }
+    .km-4{
+        left: 180px;
+    }
+    .pinterPlayGrounds{
+        margin-left: 320px;
+    }
+    #planBackground{
+        justify-content: unset;
+        align-items: unset;
+    }
+    
+    #thePlan h1{
+        font-size: 40px;
+        width: 310px;
+    }
+    #planNav nav{
+        width: 140px;
+    }
+    #planDiscription{
+        width: 50%;
+        position: relative;
+        left: 200px;
+        top:20px;
+    }
+    #wrapInfoPictures{
+        text-align: center;
+    }
+    #planInfo, #planPictures{
+        width: 50%;
+    }
+    #newDiv img{
+        height: 145px;
+        max-width: 145px;
+        right: 0px;
+    }
+    .newConcept, .value{
+        width: 48%;
+    }
+    #banner-video{
+        width: 768px;
+        height: 458px;
+    }
+    .btnVideo{
+        margin-top: -50px;
+    }
+    .infoAppartments{
+        padding: 5px 15px;
+    }
+    .description{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .description p{
+        margin: 0 !important;
+    }
+    .infoAddresNy{
+        padding: 20px;
+    }
+    .room{
+        max-height: 425px;
+    }
+    .logo_2 img{
+        margin-top: 355px;
+    }
+    .email{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #leftInfo i::before{
+        display: flex;
+        justify-content: center;
+    }
+    #leftInfo{
+        display: none;
+    }
+    .btn_2{
+        padding: 0px 200px;
+        margin-bottom: 320px;
+        position: absolute;
+        top: 110px;
+    }
+    
+    #welcome, .welcome_appartment_1, .slideshow-container{
+        height: auto;
+    }
+    .lifestyle{
+        width: unset;
+        margin-right: 10px;
+    }
+    #banner-video{
+        width: auto;
+        height: 441px;
+        border: 20px solid white;
+    }
+    .chillZone, .architecturePlan, .signaturePerson{
+        width: 235px;
+    }
+    #postedByPictures{
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    .navbar-opened{
+        flex-wrap: wrap;
+        height: auto !important;
+        margin-top: 439px;
+    }
+    .navbar-opened .open .fa-bars{
+        margin-top: -418px;
+        margin-left: 30px;
+    }
+    .navbar-opened .search{
+        border: none;
+        position: relative;
+        right: 124px;
+    }
+    .navbar-opened .open{
+        background-color: whitesmoke;
+    }
+    .navbar-opened .schedule{
+        margin: auto;
+    }
+   
+    #navigatorbar{
+        justify-content: end;
+    }
+    #select{
+        flex-wrap: wrap;
+    }
+    #select .container:first-child, #select .container:nth-child(2){
+        margin-bottom: 20px;
+    }
+
+    #postedByPictures{
+        align-items: unset;
+    }
+    .closebtn{
+        margin-left: -188px;
+    }
+    .nextImg{
+        width: 150px;
+        margin-left: 415px;
+    }
+    .prevImg{
+        width: 150px;
+        margin-left: 189px;
+    }
+    ul li:hover {
+        border-top: none;
+
+    }
+    #tourVideo{
+        height: 250px;
+    }
+}
+/*----------------------------------------------------------------------------- end screen from 768 to 992px --------------------------------------------------------------------- */
+
+
+/*---------------------------------------------------------------------------------------For Mobile devices: from 576 to 768 ------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+    #info{
+        height: auto;
+    }
+    .certifietAgentInfo{
+        padding-left: 20px;
+    }
+    .certifietAgentInfo, .prootyLogo{
+        width: 220px;
+    }
+    .prootyLogo img{
+        margin-left: 35px;
+    }
+    .prootyLogo::before{
+        border-top: 10px solid tan;
+    }
+    #exploreFooter, .exploreFooterLeft{
+        margin-right: 4px;
+    }
+    .needHelp a{grid-template: 2393px;
+        padding-left: 0;
+    }
+    #email{
+        padding-left: 2px;
+        padding-right: 0px;
+    }
+    #backgroundemail input[type="submit"]{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    #backgroundPostetBy{
+        height: auto;
+    }
+    .postedBy{
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+    #areaPicture::before{
+        width: 43%;
+    }
+    .pointerShoppingCentar{
+        margin-left: 145px;
+        margin-top: 430px;
+    }
+    .km-1, .km-2, .km-3, .km-4{
+        left: 2px;
+    }
+    .pointerCentralPark{
+        margin-left: 140px;
+    }
+    .km-3{
+        top:325px;
+    }
+    .km-4{
+        top: 465px;
+    }
+    .pinterPlayGrounds{
+        margin-left: 142px;
+        margin-top: 571px;
+    }
+    #neighbor h1{
+        width: 200px;
+    }
+    #planInfo {
+        width: 38%;
+    }
+    #planDiscription{
+        position: unset;
+    }
+    #thePlan h1{
+        font-size: 30px;
+        width: 235px;
+    }
+    #planNav nav{
+        width: 110px;
+       
+    }
+    #thePlan h1::before{
+        height: 85px;
+    }
+    #planPictures{
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    #envato img{
+        max-width: 100px;
+    }
+    #newDiv img{
+        height: 110px;
+        max-width: 110px;
+        right: 5px;
+        box-shadow: -6px 0px 0px 0px #bf976b;
+    }
+    .newConcept {
+        padding-right: 0;
+    }
+    .value{
+        padding-left: 20px
+    }
+    #banner-video{
+        width: 578px;
+        height: 352px;
+    }
+    #tourVideo{
+        height: 150px;
+    } 
+    .btnVideo{
+        margin-top: -100px;
+    }
+    #buildingTourBackground h1{
+        font-size: 45px;
+    }
+    #wrap{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .description{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .infoAppartments .column div{
+        padding-left: 5px;
+    }
+    .room{
+        margin-left: 20px;
+    }
+    #welcome, .welcome_appartment_1 {
+        height: 641px;
+    }
+    .welcome_appartment_1 img{
+        height: 641px;
+    }
+    .btn_2{
+        top: 255px;
+    }
+    .dots{
+        bottom: 80px;
+    }
+    .btn_2 p{
+        font-size: 65px;
+    }
+    .logo_2 img {
+        margin-left: -20px;
+        margin-top: 375px;
+        max-width: 50px;
+        height: 50px;
+    }
+    .navbar-opened ul li{
+        width: 55%;
+    }
+    .navbar-opened .open .fa-bars{
+        margin-left: -143px;
+    }
+    .navbar-opened{
+        width: 29% !important;
+    }
+    .socialmedia{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .socialmedia .fa {
+        margin: 0;
+    }
+    .faqs, .Pricing{
+        margin-right: 0px;
+    }
+    #info{
+        height: auto;
+    }
+    .workhours{
+        width: 245px;
+    }
+    .fPc{
+        width: 196px;
+    }
+    .socialmedia .fa{
+        height: 30px;
+        width: 30px;
+    }
+    .containaer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lifestyle, .construction, .location, .technology{
+        margin-bottom: 10px;
+    }
+    #luxeryBackground{
+        height: auto;
+    }
+    #select{
+        flex-direction: column;
+        align-items: center;
+    }
+    #select .container{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    #navWrap{
+        flex-direction: column;
+    }
+    #thePlan p, #thePlan h1{
+        text-align: center;
+    }
+    #thePlan h1::before{
+        margin-left: 43px;
+    }
+    #planNav{
+        margin-bottom: 25px;
+    }
+    #wrapInfoPictures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #planInfo{
+        margin-bottom: 25px;
+        width: 50%;
+    }
+    #nearby{
+        margin-top: 0;
+        justify-content: center;
+        height: 540px;
+    }
+    #neighbor{
+        width: 50%;
+        height: 415px;
+    }
+    #explore{
+        align-items: center;
+        padding: 0;
+    }
+    #areaPicture{
+        display: none;
+    }
+    #neighbor::before{
+        width: 100%;
+        height: 474px;
+    }
+    #postedByPictures{
+        flex-wrap: wrap;
+        margin: 0;
+        margin-top: 100px;
+    }
+    
+    .room{display: none;
+    }
+    .lifestyle{
+        width: 245px;
+    }
+    #banner-video{
+        width: auto;
+        height: 333px;
+    }
+    
+    #newsPictures{
+        flex-wrap: wrap;
+    }
+    #newsBackground{
+        height: 1500px;
+    }
+    .post{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #wrapNewsLEter{
+        justify-content: center;
+    }
+    .wrapFooter{
+        
+        justify-content: center;
+    }
+    #certifietAgent{
+        bottom: 0;
+    }
+    .navbar-opened .open .fa-bars{
+        margin-left: 11px;
+    }
+    .navbar-opened .search{
+        right: 43px;
+    }
+    .newDiv-wrapper {
+        width: 100%;
+    }
+    #select .container, .container:hover{
+        margin-bottom: 20px;
+    }
+    .hide{
+        height: 350px;
+    }
+    #planInfo{
+        width: auto;
+    }
+    #newsBackground, #postedByPictures{
+        height: auto;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 50px
+    }
+    .row{
+        margin-top: 50px;
+    }
+    .prevImg{
+        width: 100px;
+        margin-left: 141px;
+    }
+    .nextImg{
+        width: 100px;
+        margin-left: 319px;
+    }
+    .closebtn{
+        margin-left: -140px;
+    }
+
+}
+/*-------------------------------------------------------------------- end screen from 576 to 768px----------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------------- 3.screen min 320 max 576px---------------------------------------------------------------------------*/ 
+@media only screen and (max-width: 575px){
+    footer{
+        height: auto;
+    }
+    .copyrightRightSide{
+        flex-wrap: wrap;
+    }
+    .wrapFooter{
+        flex-wrap: wrap;
+    }
+    #certifietAgent{
+        height: auto;
+        max-width: 225px;
+        bottom: 30px;
+        left: 45px;
+    }
+    .prootyLogo{
+        height: 65px;
+    }
+    .prootyLogo p {
+        font-size: 25px;
+
+    }
+    .prootyLogo img{
+        max-width: 25px;
+        height: 25px;
+    }
+    .prootyLogo::before{
+        left: 30px;
+        top: -44px;
+    }
+    .wrapFooterContact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #backgroundemail{
+        height: 120px;
+    }
+    #email{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    #backgroundemail a{
+        font-size: 15px;
+    }
+    #backgroundemail input[type="submit"]{
+        font-size: 10px;
+        padding: 10px;
+    }
+    #wrapMike{
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    .postedBy{
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .mikeImg{
+        font-size: 14px;
+    }
+    .postedBy h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .postedBy p{
+        font-size: 13px;
+        line-height: 1.2;
+    }
+    .luxurySpaseReadMore{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        margin-bottom: 15px;
+        height: 35px;
+        font-size: 13px;
+    }
+    #newsBackground{
+        height: auto;
+    }
+    #newsPictures{
+        flex-wrap: wrap;
+    }
+    .architecturePlan, .signaturePerson, .chillZone{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    #newsTitle h1{
+        width: 100%;
+        font-size: 28px;
+    }
+    #newsTitle p{
+        font-size: 16px;
+    }
+    #newsTitle h1::before{
+        margin-left: 98px;
+    }
+    #select .container{
+        width: 100%;
+    }
+    #info{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #rightInfo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #navbar{
+        justify-content: center;
+    }
+    #navigatorbar{
+        width: 65%;
+    }
+    .btn_1{
+        height: calc(100vh - 171px);
+        align-items: unset;
+        justify-content: unset;
+        text-align: center;
+    }
+    .btn_2{
+      padding: 0;  
+      margin-top: 20px;
+    }
+    .btn_2 p{
+        font-size: 50px;
+    }
+    .dots{
+        left: 250px;
+        bottom: 100px;
+    }
+    #blanco{
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    .room{
+        margin-top: 40px;
+        margin-left: 28px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 265px;
+    }
+    .description{
+        width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .discover{
+        margin-bottom: 20px;
+    }
+    #infoAddres{
+        width: 100%;
+    }
+    .leftText, .rightText {
+        width: 100%;
+    }
+    #luxeryBackground{
+        height: auto;
+    }
+    #buildingTourBackground{
+        padding-top: 35px;
+        height: 320px;
+    }
+    #buildingTourBackground::before{
+        width: 120px;
+        height: 120px;
+    }
+    #buildingTourBackground h1{
+        font-size: 36px;
+    }
+    #banner-video{
+        width: 320px;
+        height: 195px;
+        bottom: 120px;
+        border: 17px solid white;
+    }
+    .btnVideo{
+        margin-top: -65px;
+        height: 70px;
+        width: 70px;
+    }
+    #tourVideo{
+        height: 100px;
+    }
+    #newDiv{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .rightText{
+        margin-left: 0;
+    }
+    .newConcept, .value{
+        height: auto;
+        border: 0;
+        width: 100%;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .newConcept p, .value p{
+        padding-top: 10px;
+    }
+    #newDiv img{
+        right: 10px;
+        height: 120px;
+        max-width: 120px
+    }
+    #envato img:hover{
+        max-width: 140px;
+        height: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #envato{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+
+    }
+    #envato img {
+        max-width: 81px;
+        height: 75px;
+    }
+    .navbar-opened{
+        width: 50% !important;
+        margin-left: 20px;
+        opacity: 1;
+    }
+    .navbar-opened .open .fa-bars {
+        margin-left: -140px;
+    }
+    #planNav nav:last-child{
+        margin: 0;
+    }
+    #wrapInfoPictures, #planBackground{
+        height: auto;
+    }
+    #planWrap{
+        margin: 0;
+    }
+    #wrapInfoPictures{
+        align-items: unset;
+    }
+    #planPictures img{
+        max-width: 320px;
+        height: 320px;
+        width: unset;
+    }
+    #planDiscription{
+        width: unset;
+    }
+    #planDiscription button{
+        margin-bottom: 30px;
+    }
+    #explore h1{
+        width: 100%;
+        font-size: 35px;
+    }
+    #explore h1::before{
+        background-size: 100px 90px;
+        margin-bottom: -103px;
+    }
+    #select img{
+        max-width: 320px;
+        height: 320px;
+        margin: 0;
+    }
+    .hide:after{
+        width: 320px;
+    }
+    #select .container{
+        margin-bottom: 20px;
+    }
+    #neighbor{
+        width: 80%;
+    }
+    #neighbor h1{
+        width: unset;
+        font-size: 34px;
+    }
+    #infoAddres{
+        max-width: 320px;
+        margin: auto;
+    }
+    #banner-video{
+        width: auto;
+        height: 184px;
+    }
+    #planPictures img{
+        display: none;
+    }
+    #planNav{
+        display: block;
+    }
+    #planNav nav:nth-child(2){
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #postedByPictures{
+        margin-top: 0;
+       
+    }
+    #wrapNewsLEter{
+        width: 100%;
+        justify-content: center;
+    }
+    #backgroundemail a{
+        font-size: 13px;
+    }
+    #email{
+        margin: 0;
+        padding: 5px;
+    }
+    #backgroundemail input[type="submit"]{
+        padding: 8px;
+    }
+    #certifietAgent{
+        left: 0;
+    }
+    .navbar-opened .open .fa-bars{
+        margin-left: 14px;
+    }
+    .navbar-opened{
+        margin-top: 586px;
+    }
+    .newDiv-wrapper{
+        flex-wrap: wrap;
+    }
+    .newDiv-wrapper .newConcept:last-child{
+        padding-left: 10px;
+        margin-right: 25px;
+        border-top: 1px solid #E8E8E8;;
+        padding-top: 16px;
+    }
+    .newDiv-wrapper .newConcept:first-child{
+        padding-bottom: 16px;
+    }
+    .hide, .hide::before{
+        height: 321px;
+    }
+    .hide::before{
+        margin-top: -321px;
+    }
+    #select .container{
+        width: 58%;
+    }
+    .hide:after{
+        width: 220px;
+    }
+    #planNav nav{
+        width: 120px;
+    }
+    #planInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #planInfo div{
+        width: 90%;
+    }
+    .NewContainer img {
+        width: 80%;
+        height: 450px;
+    }
+    .closebtn{
+        margin-left: -30px;
+    }
+    .nextImg{
+        width: 80px;
+        height: 450px;
+        position: absolute;
+        margin-left: 195px;
+        margin-top: -450px;
+    } 
+    .prevImg {
+        width: 80px;
+        height: 450px;
+        position: absolute;
+        margin-left: 32px;
+        margin-top: -450px;
+    }
+    .column{
+        height: 150px;
+    }
+    .prev{
+        margin-left: 20px;
+    }
+    .next{
+        margin-right: 20px;
+    }
+    #nearby{
+        height: 480px;
+    }
+}
+/*-------------------------------------------------------------------------- end screen from 320 to 576 --------------------------------------------------------------------------*/
+@media only screen and (max-width: 450px){
+    .dots {
+        left: 175px;
+    }
+    .prev{
+        margin-left: -5px;
+    }
+    .next{
+        margin-right: -5px;
+    }
+}
+/*-----------------------------------------------------------------------start from 280px to 320px-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 319px){
+    #banner-video{
+        width: auto;
+        height: 160px;
+        border: 14px solid white;
+    }
+    #buildingTourBackground h1{
+        font-size: 30px;
+    }
+    #buildingTourBackground p{
+        font-size: 14px;
+    }
+    #planWrap{
+        width: 100%;
+    }
+    #planInfo div{
+        width: 263px;
+    }
+    #planDiscription{
+        width: 100%;
+    }
+    #planDiscription button{
+        width: 245px;
+    }
+    #wrapNewsLEter{
+        display: grid;
+        text-align: center;
+    }
+    #email{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navbar-opened{
+        margin-left: 0px;
+    }
+    .newDiv-wrapper .newConcept{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #newDiv img{
+        margin-top: 15px;
+    }
+    .container p{
+        left: 40px;
+    }
+    .hide::before{
+        margin-left: 20px;
+    }
+    .hide:after{
+        width: 205px;
+    }
+
+    #certifietAgent{
+        bottom: 0;
+    }
+    .NewContainer img{
+        height: 400px;
+    }
+    .closebtn{
+     margin-left: -25px;   
+    }
+    .nextImg{
+        width: 80px;
+        height: 400px;
+        position: absolute;
+        margin-left: 158px;
+        margin-top: -400px;
+    }
+    .prevImg {
+        width: 80px;
+        height: 400px;
+        position: absolute;
+        margin-left: 27px;
+        margin-top: -400px;
+    }
+    .dots {
+        left: 115px; 
+    }
+    #nearby {
+        height: 530px;
+    }
+}
+
+/*----------------------------------------------------------------end screen from 280px to 320px---------------------------------------------------------------------------*/
